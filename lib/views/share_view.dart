@@ -25,9 +25,9 @@ class _ShareViewState extends State<ShareView> {
 
   SharePlatform _selectedPlatform = SharePlatform.ios;
 
-  // Liens officiels de téléchargement GitHub Releases par défaut
-  String _iosUrl = 'https://github.com/audiopulsemusic/audiopulse/releases/latest';
-  String _androidUrl = 'https://github.com/audiopulsemusic/audiopulse/releases/latest';
+  // Liens officiels de téléchargement direct GitHub Releases
+  String _iosUrl = 'https://github.com/audiopulsemusic/audiopulse/releases/latest/download/AudioPulse.ipa';
+  String _androidUrl = 'https://github.com/audiopulsemusic/audiopulse/releases/latest/download/app-arm64-v8a-release.apk';
 
   bool _wasActive = false;
 
