@@ -1,133 +1,36 @@
-# 🎵 Audio Pulse — Lecteur Musical & Hors-Ligne (Flutter)
+# 🎵 Audio Pulse
 
-[![Latest Release](https://img.shields.io/github/v/release/audiopulsemusic/audiopulse?color=EC4899&label=T%C3%A9l%C3%A9charger%20APK&logo=android)](https://github.com/audiopulsemusic/audiopulse/releases/latest)
-[![License: MIT](https://img.shields.io/badge/License-MIT-8B5CF6.svg)](LICENSE)
+[![Télécharger pour Android](https://img.shields.io/badge/Android-Télécharger%20APK-EC4899?style=for-the-badge&logo=android&logoColor=white)](https://github.com/audiopulsemusic/audiopulse/releases/latest/download/app-arm64-v8a-release.apk)
+[![Télécharger pour iOS](https://img.shields.io/badge/iOS-Télécharger%20IPA-8B5CF6?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/audiopulsemusic/audiopulse/releases/latest/download/AudioPulse.ipa)
+[![Licence](https://img.shields.io/badge/Licence-MIT-10B981?style=for-the-badge)](LICENSE)
 
-Application musicale multiplateforme (**Android, iOS, macOS, Linux, Windows**) écrite en **Dart / Flutter**, avec écoute en arrière-plan, mode hors-ligne complet, compatibilité **Android Auto / Apple CarPlay**, import de file d'attente et interface Cyber Glassmorphism.
-
----
-
-## 📥 Téléchargement & Installation (Android / Obtainium)
-
-- **[Télécharger la dernière version (`.apk`) sur GitHub Releases](https://github.com/audiopulsemusic/audiopulse/releases/latest)** :
-  - **`app-arm64-v8a-release.apk`** *(Recommandé — 99 % des smartphones Android récents)*
-  - **`app-armeabi-v7a-release.apk`** *(Anciens appareils Android 32 bits)*
-  - **`app-x86_64-release.apk`** *(Chromebooks & Émulateurs)*
-- **Mise à jour automatique via [Obtainium](https://github.com/ImranR98/Obtainium)** : ajoutez simplement l'URL `https://github.com/audiopulsemusic/audiopulse`.
+**Audio Pulse** est un lecteur musical moderne, fluide et sans publicité, conçu pour écouter vos morceaux préférés en streaming ou hors-ligne avec une interface soignée au design Cyber & Glassmorphism.
 
 ---
 
-## 🚀 Fonctionnalités Clés
+## ✨ Fonctionnalités
 
-- **Moteur Audio Hi-Fi** : Lecture en streaming 24-bit, seek précis, volume, modes boucle (*off, all, one*), lecture aléatoire (*shuffle*), et synchronisation de file d'attente (*queue*).
-- **Design System Cyber & Glassmorphism** :
-  - Palette sombre `#06080C` avec accents néons (`#EC4899`, `#8B5CF6`, `#10B981`).
-  - Effets de flou translucides (*glass panels*), ombres portées douces et halos dynamiques adaptés à la couleur d'ambiance de chaque morceau.
-- **Spectre Audio FFT en Temps Réel** : Visualiseur de fréquences 16 bandes animé dans le lecteur plein écran et dans le mini player.
-- **Studio Égaliseur EQ 10-Band** : Sliders de fréquences (60Hz, 230Hz, 910Hz, 4kHz, 14kHz), amplification des basses (*Bass Boost*) et bascule *Son Spatial 3D*.
-- **Préréglages Acoustiques** : *Flat, Bass Boost, Vocal Clarity, Electronic, Rock, Club Rave*.
-- **Vues & Navigation** :
-  - **Accueil (`HomeView`)** : Recherche en direct, filtres par genre, liste des morceaux avec lecture/téléchargement, carrousels d'albums, artistes et playlists.
-  - **Explorer (`ExploreView`)** : Canaux musicaux thématiques en tuiles dégradées.
-  - **Recherche Instantanée (`SearchView`)** : Recherche multi-entités (morceaux, albums, artistes).
-  - **Bibliothèque Utilisateur (`LibraryView`)** : Profil Hi-Fi, statut d'abonnement, gestion et création de playlists.
-  - **Page Artiste (`ArtistView`)** : Hero banner grand format avec biographie et discographie.
-  - **Page Playlist (`PlaylistView`)** : En-tête avec bouton de lecture globale et table des titres.
-- **Inspecteur Backend API (`ApiDevModal`)** : Test de connectivité en direct vers API REST externe avec basculement automatique sur le moteur local *Mock Engine*.
+- 🎧 **Streaming & Mode Hors-ligne** : Écoutez en streaming haute qualité ou téléchargez vos morceaux pour en profiter sans connexion.
+- 🚗 **Compatible Voiture** : Prise en charge native d'Android Auto et Apple CarPlay avec recherche vocale et commandes au volant.
+- 🎚️ **Égaliseur Studio** : Personnalisez votre son avec l'égaliseur multibande, amplification des basses et préréglages acoustiques.
+- 🎨 **Design Élégant** : Interface sombre moderne avec halos lumineux dynamiques qui s'adaptent à la pochette du morceau en cours.
+- 📂 **Gestion de Bibliothèque** : Créez des playlists, explorez les discographies d'artistes et retrouvez facilement vos favoris.
+- 📲 **Import Intelligent** : Importez facilement vos files d'attente et morceaux favoris.
 
 ---
 
-## 📱 Lancement de l'Application
+## 📥 Téléchargement
 
-### Prérequis
-- Flutter SDK (v3.38+ recommandé)
-- Dart SDK (v3.10+)
+### Android
+- **[Téléchargement direct (.apk)](https://github.com/audiopulsemusic/audiopulse/releases/latest/download/app-arm64-v8a-release.apk)** *(recommandé pour la majorité des smartphones récents)*
+- Compatible avec les mises à jour automatiques via **[Obtainium](https://github.com/ImranR98/Obtainium)** en ajoutant ce dépôt : `https://github.com/audiopulsemusic/audiopulse`
+- Retrouvez l'ensemble des architectures sur la page **[Releases](https://github.com/audiopulsemusic/audiopulse/releases/latest)**.
 
-### Commandes
-
-1. Se placer dans le dossier Flutter :
-```bash
-cd audiopulse_flutter
-```
-
-2. Installer les dépendances :
-```bash
-flutter pub get
-```
-
-3. Lancer l'application :
-- **Sur navigateur Chrome (Web) :**
-  ```bash
-  flutter run -d chrome
-  ```
-- **Sur macOS (Desktop natif) :**
-  ```bash
-  flutter run -d macos
-  ```
-- **Sur simulateur iOS :**
-  ```bash
-  flutter run -d ios
-  ```
-- **Sur émulateur Android :**
-  ```bash
-  flutter run -d android
-  ```
-
-4. Lancer les tests unitaires et widget :
-```bash
-flutter test
-```
-
-5. Vérifier la conformité du code :
-```bash
-flutter analyze
-```
+### iOS
+- **[Téléchargement du fichier (.ipa)](https://github.com/audiopulsemusic/audiopulse/releases/latest/download/AudioPulse.ipa)** installable via AltStore, SideStore ou Sideloadly.
 
 ---
 
-## 📂 Architecture du Projet
+## 📄 Licence
 
-```
-audiopulse_flutter/
-├── lib/
-│   ├── data/
-│   │   └── mock_data.dart            # Données locales de test (titres, artistes, playlists)
-│   ├── models/
-│   │   ├── album.dart
-│   │   ├── api_config.dart
-│   │   ├── artist.dart
-│   │   ├── equalizer_state.dart
-│   │   ├── playlist.dart
-│   │   ├── track.dart
-│   │   └── user_profile.dart
-│   ├── providers/
-│   │   └── audio_provider.dart       # Gestionnaire d'état global réactif
-│   ├── services/
-│   │   ├── api_service.dart          # Client API REST / Mock
-│   │   └── audio_player_service.dart # Pilote du lecteur audio just_audio
-│   ├── theme/
-│   │   └── app_theme.dart            # Tokens de couleurs, thème sombre et glassmorphism
-│   ├── views/
-│   │   ├── artist_view.dart
-│   │   ├── explore_view.dart
-│   │   ├── home_view.dart
-│   │   ├── library_view.dart
-│   │   ├── playlist_view.dart
-│   │   └── search_view.dart
-│   ├── widgets/
-│   │   ├── api_dev_modal.dart
-│   │   ├── app_network_image.dart
-│   │   ├── bottom_nav.dart
-│   │   ├── create_playlist_modal.dart
-│   │   ├── equalizer_modal.dart
-│   │   ├── fullscreen_player.dart
-│   │   ├── header_bar.dart
-│   │   ├── mini_player.dart
-│   │   ├── queue_drawer.dart
-│   │   └── sidebar_nav.dart
-│   └── main.dart                     # Point d'entrée de l'application
-├── test/
-│   ├── audio_provider_test.dart      # Tests unitaires de la logique métier
-│   └── widget_test.dart              # Test d'intégration de l'interface
-└── pubspec.yaml                      # Configuration et dépendances Flutter
-```
+Ce projet est distribué sous licence open-source **MIT**. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
