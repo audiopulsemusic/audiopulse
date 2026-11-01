@@ -1,0 +1,8 @@
+# Production Release Keystore configuration template
+# Copy this file to "key.properties" and fill with your release keystore details.
+# DO NOT commit "key.properties" or "*.jks" to version control!
+
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=YOUR_KEY_ALIAS
+storeFile=/path/to/your/upload-keystore.jks
